@@ -31,7 +31,7 @@ function App() {
   function send() {
     setstatus(true);
     axios
-      .post("http://localhost:5000/sendemail", { msg: msg, emailList: emailList })
+      .post("https://backend-bulkmail-app-1.onrender.com/sendemail", { msg: msg, emailList: emailList })
       .then(() => {
         alert("✅ Email sent successfully!");
         setstatus(false);
